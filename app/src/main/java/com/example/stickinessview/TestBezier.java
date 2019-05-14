@@ -28,9 +28,17 @@ public class TestBezier extends View {
         mPaint.setDither(true);
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setStrokeWidth(5);
+        //一阶
         mPath = new Path();
         mPath.moveTo(100, 100);
         mPath.lineTo(300, 300);
+
+        //二阶
+        //mPath.quadTo(400,0,500,300);
+        //相对实现
+        mPath.rQuadTo(100,-300,200,0);
+
+        //三阶
     }
 
     @Override
