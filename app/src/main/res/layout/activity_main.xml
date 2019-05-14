@@ -5,11 +5,16 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <com.example.stickinessview.StickinessView
         android:id="@+id/stickiness_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <com.example.stickinessview.TestBezier
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>
